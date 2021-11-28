@@ -1,6 +1,7 @@
 package com.tap.algos;
 
 import com.tap.algos.BubbleSort.BubbleSortMain;
+import com.tap.algos.InsertionSort.InsertionSortMain;
 import org.openjdk.jmh.annotations.*;
 
 import java.util.concurrent.TimeUnit;
@@ -32,7 +33,7 @@ public class BenchmarkAlgos {
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
     @Fork(value = 1, warmups = 1)
     public void benchMarkBS() {
-        BubbleSortMain.sortIntArray(Utils.generateArray(10));
+        BubbleSortMain.sortIntArray(Utils.generateArray(1000));
     }
 
     @Benchmark
@@ -42,6 +43,7 @@ public class BenchmarkAlgos {
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
     @Fork(value = 0, warmups = 1)
     public void benchMarkIS() {
+        InsertionSortMain.sortIntArray(Utils.generateArray(1000));
     }
 
     @Benchmark
