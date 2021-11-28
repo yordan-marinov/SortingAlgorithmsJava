@@ -7,7 +7,7 @@ public class Utils {
         int[] generatedArray = new int[n];
 
         for (int i = 0; i < n; i++) {
-            int newRandomInt = new Random().nextInt(10000);
+            int newRandomInt = new Random().nextInt(10); // 10000
             generatedArray[i] = newRandomInt;
         }
         return generatedArray;

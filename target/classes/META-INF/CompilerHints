@@ -5,7 +5,6 @@ dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
 inline,com/tap/algos/BenchmarkAlgos.benchMarkBS
 inline,com/tap/algos/BenchmarkAlgos.benchMarkIS
-inline,com/tap/algos/BenchmarkAlgos.benchMarkInsertion
 inline,com/tap/algos/BenchmarkAlgos.benchMarkMS
 inline,com/tap/algos/BenchmarkAlgos.benchMarkQS
 inline,com/tap/algos/BenchmarkAlgos.benchMarkSS
