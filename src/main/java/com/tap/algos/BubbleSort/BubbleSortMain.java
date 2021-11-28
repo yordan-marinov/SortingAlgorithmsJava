@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BubbleSortMain {
 
     public static int[] sortIntArray(int[] elementsArray) {
-        System.out.println(Arrays.toString(elementsArray));
+//        System.out.println(Arrays.toString(elementsArray));
 
         while (true) {
             boolean is_sorted = true;

@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class InsertionSortMain {
 
     public static int[] sortIntArray(int[] elementsArray) {
-        System.out.println("Raw array: " + Arrays.toString(elementsArray));
+//        System.out.println("Raw array: " + Arrays.toString(elementsArray));
 
         for (int i = 1; i < elementsArray.length; i++) {
             // Setting the end of the sorted array
