@@ -2,6 +2,8 @@ package com.tap.algos;
 
 import com.tap.algos.BubbleSort.BubbleSortMain;
 import com.tap.algos.InsertionSort.InsertionSortMain;
+import com.tap.algos.MergeSort.MergeSortMain;
+import com.tap.algos.Quicksort.QuicksortMain;
 import com.tap.algos.SelectionSort.SelectionSortMain;
 import org.openjdk.jmh.annotations.*;
 
@@ -15,6 +17,8 @@ public class BenchmarkAlgos {
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
     @Fork(value = 0, warmups = 1)
     public void benchMarkQS() {
+        int[] unsorted = Utils.generateArray(1000);
+        QuicksortMain.sortIntArray(unsorted, 0, unsorted.length - 1);
     }
 
     @Benchmark
@@ -24,6 +28,7 @@ public class BenchmarkAlgos {
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
     @Fork(value = 0, warmups = 1)
     public void benchMarkMS() {
+        MergeSortMain.sortIntArray(Utils.generateArray(1000));
     }
 
 

@@ -1,10 +1,6 @@
 package com.tap.algos;
 
-import com.tap.algos.BubbleSort.BubbleSortMain;
-import com.tap.algos.InsertionSort.InsertionSortMain;
-import com.tap.algos.MergeSort.MergeSortMain;
 import com.tap.algos.Quicksort.QuicksortMain;
-import com.tap.algos.SelectionSort.SelectionSortMain;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -28,9 +24,14 @@ public class App {
 //        System.out.println("   Sorted: " + Arrays.toString(sorted));
 
         // Merge Sort
+//        System.out.println("Raw array: " + Arrays.toString(unsorted));
+//        int[] sorted = MergeSortMain.sortIntArray(unsorted);
+//        System.out.println("   Sorted: " + Arrays.toString(sorted));
 
-        // Quick Sort
-
+//        // Quick Sort
+//        System.out.println("Raw array: " + Arrays.toString(unsorted));
+//        int[] sorted = QuicksortMain.sortIntArray(unsorted, 0, unsorted.length - 1);
+//        System.out.println("   Sorted: " + Arrays.toString(sorted));
 
         }
     }
